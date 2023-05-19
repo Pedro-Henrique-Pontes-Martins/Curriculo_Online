@@ -10,9 +10,9 @@
     </head>
     <body>
         <nav>
-            <a href="">Skills</a>
+            <a href="#skills">Skills</a>
             <img src="imagens/simbolo.png" alt="Simbolo da página">
-            <a href="">Formulário</a>
+            <a href="#formulário">Enviar Mensagem</a>
         </nav>
         <main>
             <div class="informaçõesPessoais">
@@ -36,7 +36,7 @@
                     <img src="imagens/imagem-de-perfil.png" alt="Imagem do Currículo">
                 </div>
             </div>
-            <div class="skills">
+            <div class="skills" id="skills">
                 <div>
                     <h4>Hard Skills:</h4>
                     <li>Inglês intermediário</li>
@@ -46,8 +46,34 @@
                     <li>Python intermediário</li>
                     <li>C# básico</li>
                 </div>
-                <div></div>
+                <div>
+                    <h4>Soft Skills:</h4>
+                    <li>Criatividade</li>
+                    <li>Inovação</li>
+                    <li>Pensamento crítico</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Comunicação efetiva</li>
+                    <li>Capacidade de concentração</li>
+                </div>
             </div>
         </main>
+        <footer>
+            <h2>Me envie uma Mensagem</h2>
+            <form id="formulário">
+                <label>Nome:</label>
+			    <input type="text" name="nome" class="padrão" id="name" required>
+
+                <label>Email:</label>
+			    <input type="email" name="nome" class="padrão" id="name" required>
+
+                <label>Assunto:</label>
+			    <input type="text" name="nome" class="padrão" id="name" required>
+
+                <label>Mensagem:</label>
+			    <textarea cols="65" rows="10" class="caixa-de-texto" required></textarea>
+
+                <input type="submit" value="Enviar" class="enviar" id="enviar">
+            </form>
+        </footer>
     </body>
 </html>
